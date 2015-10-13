@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+
+		<form class="form1">
+			<fieldset>
+				<legend>
+					אנא מלאו את הטופס
+				</legend>
+				<label for="NA">יש לאמת סיסמא</label>
+				<input id="NA" type="text" required="required" maxlength="30" />
+				<br />
+				<label for="FirstName">כתובת מייל</label>
+				<input  id="FirstName" type="email"  required="required" maxlength="30"/>
+				<br />
+
+				<label for="password">אנא הכניסו סיסמא</label>
+				<input id="password"type="password" maxlength="10" required="required"/>
+				<br />
+
+				<label for="ReP">יש לאמת סיסמא</label>
+				<input id="ReP" type="password" required="required" />
+				<br />
+				<br />
+				<progress value="1" max="3">
+					צעד 1 מתוך3
+				</progress>
+				<br />
+				<br />
+				<label for="Age">אנא הכנס גילך</label>
+				<input id="Age"type="number" min="18" max="150" step="2"/>
+				<br />
+				<input type="radio" name="q" id="female" value="רווק" />
+				<label>רווק</label>
+				<input type="radio" name="q"  value="נשוי" />
+				<label>נשוי</label>
+
+				<br />
+				<br />
+
+				<label> תחביבים:</label>
+				<br />
+
+				<input type="checkbox" name="amount"  value="1" checked>
+				<label for="amount1">לרוץ</label>
+				<br />
+
+				<input type="checkbox" name="amount"  value="1" checked>
+				<label for="amount1">לשחות</label>
+				<br />
+
+				<input type="checkbox" name="amount"  value="1" checked>
+				<label for="amount1">לרכב על אופניים</label>
+				<br />
+				<br/>
+
+				<label for="code">הכנס קוד משתמש</label>
+				<input id="code"type="text" maxlength="10"/>
+				<br />
+				<br />
+
+				<progress value="2" max="3">
+					.
+				</progress>
+				<br />
+				<br />
+				<label for="Ppic">העלה תמונת פרופיל</label>
+				<input id="Ppic"type="file" />
+				<br />
+
+				<label id="au">ספר על עצמך</label>
+				<textarea id="au" rows="1" cols="10"></textarea>				
+			 
+ <br />
+				<br />
+
+				<progress value="3" max="3">
+					.
+				</progress>
+				<br/>
+
+				<button type="reset">
+					אפס טופס
+				</button>
+				<button type="submit">
+					שלח
+				</button>
+			</fieldset>
+		</form>
+	</body>
+	<script>
+				var email = document.getElementById("mail");
+				email.addEventListener("keyup", function event){
+					 if(email.validity.typeMismatch){
+					 	email.setCustomValidity("כתובת דואר לא תקינה");
+					 	 } else {email.setCustomValidity("");}
+					 }
+				
+	</script>
+</html>

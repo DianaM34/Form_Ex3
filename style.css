@@ -1,0 +1,21 @@
+form {
+	margin:auto;
+	direction: rtl;
+	width:15%
+	
+}
+
+input{
+	margin-top:10px;
+}
+legend{
+	display:block;
+	margin: auto;
+}
+button{
+	margin-top:5px;
+	display: block;
+}
+body {
+
+}
